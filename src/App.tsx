@@ -46,9 +46,19 @@ function App() {
     const spaceBetween:string = ' ';
     const star:string = '*';
     const  n:number = 5;
-
-
     let tree:string = '';
+    for(let i:number = 0; i < n; i++){
+        tree += spaceBetween.repeat(n - i) + star.repeat(i + 1) + star.repeat(i) +'\n';
+    }
+    let counter:number = n;
+    while(counter > 0){
+    tree += spaceBetween.repeat(n) + star + '\n';
+    counter--;
+}
+console.log(tree);
+
+
+    /*let tree:string = '';
     for (let i:number = 0; i < n; i++) {
         tree += spaceBetween.repeat(n - i - 1) + star.repeat(i + 1) + star.repeat(i) + '\n';
     }
@@ -58,7 +68,8 @@ function App() {
         tree += spaceBetween.repeat(n - 1) + star + '\n';
         counter--;
     }
-    console.log(tree);
+    console.log(tree);*/
+
 
 
 
