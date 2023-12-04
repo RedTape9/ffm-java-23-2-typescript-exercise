@@ -46,7 +46,7 @@ function App() {
     const spaceBetween:string = ' ';
     const star:string = '*';
     const  n:number = 5;
-    let tree:string = '';
+    /*let tree:string = '';
     for(let i:number = 0; i < n; i++){
 
         for(let j:number = 0; j < n/2; j++){
@@ -59,10 +59,10 @@ function App() {
     tree += spaceBetween.repeat(n) + star + '\n';
     counter--;
 }
-console.log(tree);
+console.log(tree);*/
 
 
-    /*let tree:string = '';
+    let tree:string = '';
     for (let i:number = 0; i < n; i++) {
         tree += spaceBetween.repeat(n - i - 1) + star.repeat(i + 1) + star.repeat(i) + '\n';
     }
@@ -74,7 +74,6 @@ console.log(tree);
     }
     console.log(tree);
 
-*/
 
 
 
